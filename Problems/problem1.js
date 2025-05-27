@@ -21,8 +21,6 @@ Question:
 var twoSum = function (nums, target) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
-      console.log(nums[j], "jjjjj");
-
       if (nums[j] === target - nums[i]) {
         return [i, j];
       }
@@ -36,8 +34,6 @@ var twoSum2 = function (nums, target) {
   let newArr = [];
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
-      console.log(nums[j], "jjjjj");
-
       if (nums[i] + nums[j] === target) {
         newArr.push([i, j]);
       }
